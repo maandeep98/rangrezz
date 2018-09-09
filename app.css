@@ -1,0 +1,133 @@
+body {
+    background: url("bg-21.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body,html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    margin-left: 20%;
+    margin-top: 0%;
+    width: 60%;
+    height: 50%;
+    position: relative;
+}
+
+.mySlides {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    font-weight: inherit;
+    color: #f2f2f2;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+.dots {
+    margin-top: 5%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.sample {
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    float: left;
+}
+
+#logo-img {
+    height: 10%;
+    width: 10%;
+}
+.abc {
+    float: right;
+    margin-right: 5%;
+}
+
+a, a:visited, a:active, a:hover, a:link {
+    text-decoration: none;
+    color: white;
+    text-underline: none;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 1.3em;
+}
